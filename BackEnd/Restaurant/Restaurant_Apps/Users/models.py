@@ -8,6 +8,12 @@ from django.core.validators import RegexValidator
 
 class CustomUser(AbstractUser):
     '''Custom user model'''
+    email = models.EmailField(
+        max_length=255,
+        unique=True,
+        error_messages={
+            'unique': "A user with that email already exists."
+        })
     phone_number = models.CharField(
         max_length=15,
         blank=True,
