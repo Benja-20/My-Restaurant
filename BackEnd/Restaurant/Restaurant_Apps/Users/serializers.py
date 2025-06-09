@@ -30,7 +30,9 @@ class RegisterSerializer(serializers.ModelSerializer):
 
 
 class UserSerializer(serializers.ModelSerializer):
+    '''Users' serializer for the API, used for retrieving user data'''
     class Meta:
+        """Meta class for the serializer"""
         model = CustomUser
         fields = ('id', 'username', 'email', 'first_name',
                   'last_name', 'phone_number')
