@@ -1,0 +1,65 @@
+#navbar {
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#navbar ul {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.Navbar_element {
+    flex: 1;
+
+    text-align: center;
+    background-color: white;
+    padding: 10px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+.Navbar_element a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.Navbar_element>button {
+    display: block;
+    width: 100%;
+    /* padding: 10px 0; */
+    background: none;
+    border: none;
+    color: black;
+    text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+#navbar li {
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    padding: 10px 0;
+    border: 3px solid black;
+    border-radius: 10px;
+    appearance: none;
+}
+
+/* #navbar li {
+    flex: 1;
+    text-align: center;
+    background-color: white;
+    padding: 10px 0;
+    border: black 2px solid;
+    border-radius: 10px;
+} */
