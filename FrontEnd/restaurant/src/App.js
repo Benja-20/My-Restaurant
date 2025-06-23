@@ -5,6 +5,8 @@ import Home from './pages/home';
 import RegisterPage from './pages/users/register';
 import LoginPage from './pages/users/login';
 import ProfilePage from './pages/users/profile';
+import ReservationList from './pages/reservations/reservationsList';
+import NewReservation from './pages/reservations/newReservation';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/users/register/" element={<RegisterPage />} />
           <Route path="/me" element={<ProfilePage />} />
+          <Route path="/reservations" element={<ReservationList />} />
+          <Route path="/reservations/new" element={<NewReservation />} />
           {/* Add more routes as needed */}
         </Routes>
       </BrowserRouter >
